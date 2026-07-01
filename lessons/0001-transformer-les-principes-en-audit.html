@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 0001 - Turn Principles into an Audit</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <div>
+          <p class="kicker">Lesson 0001</p>
+          <h1>Turn Principles into an Audit</h1>
+        </div>
+        <a class="pill" href="../reference/principes-ia-responsable.html">Reference Sheet</a>
+      </nav>
+
+      <p class="lede">
+        Goal: do more than list responsible AI principles. Turn them into useful questions you can ask about a real system.
+      </p>
+
+      <section class="callout">
+        <h3>The Core Idea</h3>
+        <p>
+          The Microsoft README presents AI as a powerful tool that can be misused. The practical response is not just to say "be ethical", but to check risks, evidence, and responsibilities.
+        </p>
+      </section>
+
+      <section>
+        <h2>The Six Angles</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Fairness</h3>
+            <p>Check whether some groups receive worse outcomes.</p>
+          </article>
+          <article class="card">
+            <h3>Reliability</h3>
+            <p>Measure errors and their consequences in important situations.</p>
+          </article>
+          <article class="card">
+            <h3>Privacy</h3>
+            <p>Limit data exposure and prevent misuse.</p>
+          </article>
+          <article class="card">
+            <h3>Inclusion</h3>
+            <p>Include the people the system may forget or serve poorly.</p>
+          </article>
+          <article class="card">
+            <h3>Transparency</h3>
+            <p>Make AI use visible, understandable, and contestable.</p>
+          </article>
+          <article class="card">
+            <h3>Accountability</h3>
+            <p>Name the humans who can decide, correct, and take responsibility.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>The 4-Step Method</h2>
+        <div class="steps">
+          <div class="step">
+            <strong>1. Use Case</strong>
+            Name the decision influenced by AI.
+          </div>
+          <div class="step">
+            <strong>2. People</strong>
+            List the affected people, especially vulnerable cases.
+          </div>
+          <div class="step">
+            <strong>3. Risk</strong>
+            Describe the plausible harm if the system fails.
+          </div>
+          <div class="step">
+            <strong>4. Safeguard</strong>
+            Ask for evidence: test, threshold, human review, appeal.
+          </div>
+        </div>
+      </section>
+
+      <section class="exercise">
+        <h2>Quick Exercise</h2>
+        <p>
+          Scenario: a company uses AI to screen resumes before a human recruiter reads the best profiles.
+        </p>
+
+        <form id="quiz" class="quiz" onsubmit="event.preventDefault(); markQuiz('quiz', { q1: 'Fairness', q2: 'Accountability', q3: 'Transparency' });">
+          <div class="question">
+            <h3>1. Which principle pushes you to check whether women, older candidates, or certain backgrounds are ranked lower?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="Fairness" /> Fairness</label>
+              <label><input type="radio" name="q1" value="Safety" /> Safety</label>
+              <label><input type="radio" name="q1" value="Inclusion" /> Inclusion</label>
+              <label><input type="radio" name="q1" value="Security" /> Security</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <h3>2. Which principle asks who can correct or suspend the automated screening?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="Reliability" /> Reliability</label>
+              <label><input type="radio" name="q2" value="Protection" /> Protection</label>
+              <label><input type="radio" name="q2" value="Transparency" /> Transparency</label>
+              <label><input type="radio" name="q2" value="Accountability" /> Accountability</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <h3>3. Which principle asks you to tell candidates that AI is involved in the process?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="Inclusion" /> Inclusion</label>
+              <label><input type="radio" name="q3" value="Transparency" /> Transparency</label>
+              <label><input type="radio" name="q3" value="Fairness" /> Fairness</label>
+              <label><input type="radio" name="q3" value="Reliability" /> Reliability</label>
+            </div>
+          </div>
+
+          <button type="submit">Check</button>
+          <p class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="exercise">
+        <h2>Your Turn</h2>
+        <p>
+          Choose any AI tool you know. Fill in the fields to produce a first audit sentence.
+        </p>
+        <div class="grid two">
+          <label>
+            Use case
+            <textarea id="context" placeholder="e.g. a chatbot that advises customers"></textarea>
+          </label>
+          <label>
+            Affected people
+            <textarea id="affected" placeholder="e.g. customers, support team, non-native speakers"></textarea>
+          </label>
+          <label>
+            Priority risk
+            <textarea id="risk" placeholder="e.g. wrong answer in a sensitive situation"></textarea>
+          </label>
+          <label>
+            Initial safeguard
+            <textarea id="guardrail" placeholder="e.g. human escalation when confidence is low"></textarea>
+          </label>
+        </div>
+        <button type="button" onclick="buildAudit()">Build the Sentence</button>
+        <p id="audit-output" class="feedback" aria-live="polite"></p>
+      </section>
+
+      <section>
+        <h2>Primary Reading</h2>
+        <p>
+          Next, read the short <a href="https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/7-Ethics/README.md">Ethical and Responsible AI</a> page, then keep the <a href="../reference/principes-ia-responsable.html">reference sheet</a> nearby.
+        </p>
+        <p>
+          For future application, also compare this with the <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>, which helps move from principles to continuous risk management.
+        </p>
+      </section>
+
+      <section>
+        <h2>Question for Me</h2>
+        <p>
+          After the lesson, ask me: "Can you audit an example with me?" We will take your use case and run it through the grid.
+        </p>
+      </section>
+    </main>
+    <script src="../assets/rai-lesson.js"></script>
+  </body>
+</html>

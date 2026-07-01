@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reference Sheet - Responsible AI Principles</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <div>
+          <p class="kicker">Reference Sheet</p>
+          <h1>Responsible AI Principles</h1>
+        </div>
+        <a class="pill" href="../lessons/0001-transformer-les-principes-en-audit.html">Lesson 0001</a>
+      </nav>
+
+      <p class="lede">
+        Responsible AI is not just a high-performing model. It is a system whose effects on people are understood, limited, documented, and monitored.
+      </p>
+
+      <section class="band">
+        <div class="grid">
+          <article class="card principle">
+            <span class="badge">1</span>
+            <div>
+              <h3>Fairness</h3>
+              <p>Who could be disadvantaged by the data, the model, or the decision?</p>
+            </div>
+          </article>
+          <article class="card principle">
+            <span class="badge">2</span>
+            <div>
+              <h3>Reliability and Safety</h3>
+              <p>What happens when the system is wrong, drifts, or encounters a rare case?</p>
+            </div>
+          </article>
+          <article class="card principle">
+            <span class="badge">3</span>
+            <div>
+              <h3>Privacy and Security</h3>
+              <p>Which sensitive data enters, remains, leaves, or could be exposed?</p>
+            </div>
+          </article>
+          <article class="card principle">
+            <span class="badge">4</span>
+            <div>
+              <h3>Inclusion</h3>
+              <p>Who might be excluded by language, accessibility, context, or data?</p>
+            </div>
+          </article>
+          <article class="card principle">
+            <span class="badge">5</span>
+            <div>
+              <h3>Transparency</h3>
+              <p>Do people know that AI is involved, why it is used, and what its limits are?</p>
+            </div>
+          </article>
+          <article class="card principle">
+            <span class="badge">6</span>
+            <div>
+              <h3>Accountability</h3>
+              <p>Who can explain, correct, suspend, or take responsibility for a system decision?</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Quick Audit Grid</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>Question</th>
+              <th>Expected Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Use case</td>
+              <td>Which decision or recommendation does AI influence?</td>
+              <td>Short description of the workflow and human decisions.</td>
+            </tr>
+            <tr>
+              <td>People</td>
+              <td>Who benefits, who loses, who may be poorly represented?</td>
+              <td>List of affected groups and edge cases.</td>
+            </tr>
+            <tr>
+              <td>Risks</td>
+              <td>What plausible harms exist if the system fails?</td>
+              <td>Risk map: bias, error, leak, exclusion, opacity.</td>
+            </tr>
+            <tr>
+              <td>Safeguards</td>
+              <td>Which controls actually reduce these risks?</td>
+              <td>Tests, thresholds, human oversight, logging, appeal path.</td>
+            </tr>
+            <tr>
+              <td>Monitoring</td>
+              <td>How will we know the system remains acceptable?</td>
+              <td>Metrics, alerts, named owner, periodic review.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Sources</h2>
+        <ul class="source-list">
+          <li><a href="https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/7-Ethics/README.md">Microsoft AI for Beginners - Ethical and Responsible AI</a></li>
+          <li><a href="https://www.microsoft.com/ai/responsible-ai">Microsoft Responsible AI</a></li>
+          <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a></li>
+          <li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission - AI Act</a></li>
+        </ul>
+      </section>
+
+      <p class="print-note">Print this or keep it open while analyzing an AI project.</p>
+    </main>
+  </body>
+</html>
