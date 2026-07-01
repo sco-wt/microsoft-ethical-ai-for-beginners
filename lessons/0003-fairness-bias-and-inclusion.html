@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 0003 - Fairness, Bias, and Inclusion</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <div>
+          <p class="kicker">Lesson 0003</p>
+          <h1>Fairness, Bias, and Inclusion</h1>
+        </div>
+        <a class="pill" href="../index.html">Course Home</a>
+      </nav>
+
+      <p class="lede">
+        Goal: learn to ask whether an AI system works differently for different groups, and whether the people most affected were considered.
+      </p>
+
+      <section class="callout">
+        <h3>The Core Idea</h3>
+        <p>
+          Bias is not only an ugly dataset. It can appear in labels, sampling, objectives, deployment context, feedback loops, and who gets ignored during design.
+        </p>
+      </section>
+
+      <section>
+        <h2>Three Fairness Questions</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Representation</h3>
+            <p>Are relevant groups present in the data and tested separately?</p>
+          </article>
+          <article class="card">
+            <h3>Outcome</h3>
+            <p>Do error rates, false positives, or false negatives differ meaningfully by group?</p>
+          </article>
+          <article class="card">
+            <h3>Participation</h3>
+            <p>Were affected people included when defining success and harm?</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="exercise">
+        <h2>Quick Check</h2>
+        <form id="fairness-quiz" class="quiz" onsubmit="event.preventDefault(); markQuiz('fairness-quiz', { q1: 'Outcome', q2: 'Representation', q3: 'Participation' });">
+          <div class="question">
+            <h3>1. "False negatives are higher for older applicants" is primarily a problem of what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="Outcome" /> Outcome</label>
+              <label><input type="radio" name="q1" value="Hosting" /> Hosting</label>
+              <label><input type="radio" name="q1" value="Latency" /> Latency</label>
+              <label><input type="radio" name="q1" value="Syntax" /> Syntax</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>2. "The training set barely includes rural users" points first to what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="Security" /> Security</label>
+              <label><input type="radio" name="q2" value="Prompting" /> Prompting</label>
+              <label><input type="radio" name="q2" value="Representation" /> Representation</label>
+              <label><input type="radio" name="q2" value="Ownership" /> Ownership</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>3. "No disabled users were consulted before launch" points first to what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="Participation" /> Participation</label>
+              <label><input type="radio" name="q3" value="Caching" /> Caching</label>
+              <label><input type="radio" name="q3" value="Encryption" /> Encryption</label>
+              <label><input type="radio" name="q3" value="Versioning" /> Versioning</label>
+            </div>
+          </div>
+          <button type="submit">Check</button>
+          <p class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Practice Prompt</h2>
+        <p>
+          For one use case, list three groups that may experience different outcomes. Then write the metric you would compare across those groups.
+        </p>
+      </section>
+
+      <section>
+        <h2>Primary Reading</h2>
+        <p>
+          Read about <a href="https://github.com/fairlearn/fairlearn">Fairlearn</a> and the Microsoft lesson's fairness section. Focus on the habit of measuring group-level outcomes instead of assuming fairness from intent.
+        </p>
+        <p>
+          Next: <a href="0004-privacy-security-and-data.html">Lesson 0004 - Privacy, Security, and Data</a>.
+        </p>
+      </section>
+    </main>
+    <script src="../assets/rai-lesson.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 260" role="img" aria-labelledby="title desc">
+  <title id="title">Responsible AI audit flow</title>
+  <desc id="desc">A flow from use case to risks, safeguards, monitoring, and learning.</desc>
+  <rect width="1120" height="260" rx="8" fill="#ffffff"/>
+  <rect x="1" y="1" width="1118" height="258" rx="8" fill="none" stroke="#d8ded7" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" fill="#17211f">
+    <g transform="translate(58 68)">
+      <circle cx="48" cy="48" r="48" fill="#e6f3f1"/>
+      <text x="48" y="43" text-anchor="middle" font-size="15" font-weight="800">Use</text>
+      <text x="48" y="63" text-anchor="middle" font-size="15" font-weight="800">Case</text>
+      <text x="48" y="125" text-anchor="middle" font-size="14" fill="#5c6764">What AI influences</text>
+    </g>
+    <path d="M190 116h95" stroke="#1f7a74" stroke-width="4" stroke-linecap="round"/>
+    <path d="M283 106l20 10-20 10z" fill="#1f7a74"/>
+    <g transform="translate(315 68)">
+      <circle cx="48" cy="48" r="48" fill="#fff0df"/>
+      <text x="48" y="43" text-anchor="middle" font-size="15" font-weight="800">People</text>
+      <text x="48" y="63" text-anchor="middle" font-size="15" font-weight="800">+ Risks</text>
+      <text x="48" y="125" text-anchor="middle" font-size="14" fill="#5c6764">Who can be harmed</text>
+    </g>
+    <path d="M447 116h95" stroke="#1f7a74" stroke-width="4" stroke-linecap="round"/>
+    <path d="M540 106l20 10-20 10z" fill="#1f7a74"/>
+    <g transform="translate(572 68)">
+      <circle cx="48" cy="48" r="48" fill="#eef2f8"/>
+      <text x="48" y="43" text-anchor="middle" font-size="15" font-weight="800">Safe-</text>
+      <text x="48" y="63" text-anchor="middle" font-size="15" font-weight="800">guards</text>
+      <text x="48" y="125" text-anchor="middle" font-size="14" fill="#5c6764">What reduces risk</text>
+    </g>
+    <path d="M704 116h95" stroke="#1f7a74" stroke-width="4" stroke-linecap="round"/>
+    <path d="M797 106l20 10-20 10z" fill="#1f7a74"/>
+    <g transform="translate(829 68)">
+      <circle cx="48" cy="48" r="48" fill="#f6e8ed"/>
+      <text x="48" y="43" text-anchor="middle" font-size="15" font-weight="800">Monitor</text>
+      <text x="48" y="63" text-anchor="middle" font-size="15" font-weight="800">+ Learn</text>
+      <text x="48" y="125" text-anchor="middle" font-size="14" fill="#5c6764">What changes after launch</text>
+    </g>
+  </g>
+</svg>

@@ -8,6 +8,8 @@
   Microsoft's official page on responsible AI values, tools, and methods. Use for: checking the current wording of Microsoft's principles.
 - [Microsoft Responsible AI Toolbox](https://github.com/microsoft/responsible-ai-toolbox)
   Open source toolkit for exploring data, understanding models, and analyzing errors. Use for: moving from principles to technical diagnostics.
+- [Fairlearn](https://github.com/fairlearn/fairlearn)
+  Open source project for assessing and improving fairness in AI systems. Use for: thinking concretely about group-level outcomes and fairness metrics.
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
   Official voluntary framework for managing AI risks in design, development, use, and evaluation. Use for: structuring audits around governance, mapping, measurement, and management.
 - [European Commission: AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)

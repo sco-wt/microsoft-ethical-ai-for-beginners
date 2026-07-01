@@ -91,6 +91,14 @@ p {
   font-size: 1.2rem;
 }
 
+.course-diagram {
+  display: block;
+  width: 100%;
+  margin-top: 28px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
 .pill {
   display: inline-flex;
   align-items: center;

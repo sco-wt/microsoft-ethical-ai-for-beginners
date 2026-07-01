@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 0005 - Transparency and Accountability</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <div>
+          <p class="kicker">Lesson 0005</p>
+          <h1>Transparency and Accountability</h1>
+        </div>
+        <a class="pill" href="../index.html">Course Home</a>
+      </nav>
+
+      <p class="lede">
+        Goal: distinguish "the user was told AI exists" from real transparency, oversight, appeal, and ownership.
+      </p>
+
+      <section class="callout">
+        <h3>The Core Idea</h3>
+        <p>
+          Transparency answers "what is happening and why?" Accountability answers "who can do something about it?"
+        </p>
+      </section>
+
+      <section>
+        <h2>Four Operational Questions</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Disclosure</h3>
+            <p>Do people know AI is involved before it affects them?</p>
+          </article>
+          <article class="card">
+            <h3>Explanation</h3>
+            <p>Can the system provide a useful reason, not just a score?</p>
+          </article>
+          <article class="card">
+            <h3>Appeal</h3>
+            <p>Can a person challenge a decision or ask for human review?</p>
+          </article>
+          <article class="card">
+            <h3>Owner</h3>
+            <p>Is there a named team or person responsible for outcomes?</p>
+          </article>
+          <article class="card">
+            <h3>Logs</h3>
+            <p>Can important decisions be reconstructed later?</p>
+          </article>
+          <article class="card">
+            <h3>Shutdown</h3>
+            <p>Can the system be paused if monitoring shows harm?</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="exercise">
+        <h2>Quick Check</h2>
+        <form id="accountability-quiz" class="quiz" onsubmit="event.preventDefault(); markQuiz('accountability-quiz', { q1: 'Transparency', q2: 'Accountability', q3: 'Appeal' });">
+          <div class="question">
+            <h3>1. "Tell users when AI generated a recommendation" mainly supports what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="Transparency" /> Transparency</label>
+              <label><input type="radio" name="q1" value="Storage" /> Storage</label>
+              <label><input type="radio" name="q1" value="Latency" /> Latency</label>
+              <label><input type="radio" name="q1" value="Routing" /> Routing</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>2. "Name the team that can suspend the system" mainly supports what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="Compression" /> Compression</label>
+              <label><input type="radio" name="q2" value="Accountability" /> Accountability</label>
+              <label><input type="radio" name="q2" value="Animation" /> Animation</label>
+              <label><input type="radio" name="q2" value="Indexing" /> Indexing</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>3. "Let a user request human review" is best described as what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="Appeal" /> Appeal</label>
+              <label><input type="radio" name="q3" value="Palette" /> Palette</label>
+              <label><input type="radio" name="q3" value="Prompt" /> Prompt</label>
+              <label><input type="radio" name="q3" value="Cache" /> Cache</label>
+            </div>
+          </div>
+          <button type="submit">Check</button>
+          <p class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Practice Prompt</h2>
+        <p>
+          For a system you use, write one sentence naming the owner, the appeal path, and the condition that would trigger a pause.
+        </p>
+      </section>
+
+      <section>
+        <h2>Primary Reading</h2>
+        <p>
+          Read Microsoft's responsible AI principle descriptions and compare them with the <a href="../reference/responsible-ai-glossary.html">glossary</a>. Focus on the difference between an explanation and an accountable process.
+        </p>
+        <p>
+          Next: <a href="0006-tools-monitoring-and-next-steps.html">Lesson 0006 - Tools, Monitoring, and Next Steps</a>.
+        </p>
+      </section>
+    </main>
+    <script src="../assets/rai-lesson.js"></script>
+  </body>
+</html>

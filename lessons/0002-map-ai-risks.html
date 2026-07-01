@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 0002 - Map AI Risks</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <div>
+          <p class="kicker">Lesson 0002</p>
+          <h1>Map AI Risks Before They Hide</h1>
+        </div>
+        <a class="pill" href="../index.html">Course Home</a>
+      </nav>
+
+      <p class="lede">
+        Goal: move from "this AI system could be risky" to a concrete map of who can be harmed, how, and where controls are needed.
+      </p>
+
+      <section class="callout">
+        <h3>The Core Idea</h3>
+        <p>
+          Responsible AI starts with a clear use case. If you cannot name the decision, the affected people, and the plausible harm, you cannot choose meaningful safeguards.
+        </p>
+      </section>
+
+      <section>
+        <h2>The Risk Map</h2>
+        <div class="steps">
+          <div class="step">
+            <strong>1. Decision</strong>
+            What does AI influence: ranking, prediction, generation, access, price, advice?
+          </div>
+          <div class="step">
+            <strong>2. People</strong>
+            Who is affected directly, indirectly, or invisibly?
+          </div>
+          <div class="step">
+            <strong>3. Harm</strong>
+            What can go wrong: denial, delay, exposure, manipulation, exclusion?
+          </div>
+          <div class="step">
+            <strong>4. Control</strong>
+            What evidence shows the risk is reduced, not merely named?
+          </div>
+        </div>
+      </section>
+
+      <section class="exercise">
+        <h2>Quick Check</h2>
+        <form id="risk-quiz" class="quiz" onsubmit="event.preventDefault(); markQuiz('risk-quiz', { q1: 'Decision', q2: 'Harm', q3: 'Control' });">
+          <div class="question">
+            <h3>1. "The AI ranks loan applications" identifies which part of the risk map?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="People" /> People</label>
+              <label><input type="radio" name="q1" value="Decision" /> Decision</label>
+              <label><input type="radio" name="q1" value="Control" /> Control</label>
+              <label><input type="radio" name="q1" value="Metric" /> Metric</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>2. "A qualified person may be denied service" identifies what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="Dataset" /> Dataset</label>
+              <label><input type="radio" name="q2" value="Harm" /> Harm</label>
+              <label><input type="radio" name="q2" value="Prompt" /> Prompt</label>
+              <label><input type="radio" name="q2" value="Owner" /> Owner</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>3. "Human review is required for low-confidence cases" is what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="Harm" /> Harm</label>
+              <label><input type="radio" name="q3" value="Control" /> Control</label>
+              <label><input type="radio" name="q3" value="Person" /> Person</label>
+              <label><input type="radio" name="q3" value="Label" /> Label</label>
+            </div>
+          </div>
+          <button type="submit">Check</button>
+          <p class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Practice Prompt</h2>
+        <p>
+          Pick one AI use case and write one sentence in this format: "This AI influences X for Y people; the plausible harm is Z; the first control is W."
+        </p>
+      </section>
+
+      <section>
+        <h2>Primary Reading</h2>
+        <p>
+          Read the <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> overview. Focus on the move from abstract risk to govern, map, measure, and manage.
+        </p>
+        <p>
+          Next: <a href="0003-fairness-bias-and-inclusion.html">Lesson 0003 - Fairness, Bias, and Inclusion</a>.
+        </p>
+      </section>
+    </main>
+    <script src="../assets/rai-lesson.js"></script>
+  </body>
+</html>

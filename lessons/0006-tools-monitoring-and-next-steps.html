@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 0006 - Tools, Monitoring, and Next Steps</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <div>
+          <p class="kicker">Lesson 0006</p>
+          <h1>Tools, Monitoring, and Next Steps</h1>
+        </div>
+        <a class="pill" href="../index.html">Course Home</a>
+      </nav>
+
+      <p class="lede">
+        Goal: connect responsible AI principles to repeatable work: diagnostics before launch, monitoring after launch, and a record of decisions.
+      </p>
+
+      <section class="callout">
+        <h3>The Core Idea</h3>
+        <p>
+          Responsible AI is a lifecycle. A launch checklist is useful, but real responsibility continues through monitoring, incident response, review, and improvement.
+        </p>
+      </section>
+
+      <section>
+        <h2>Tooling Mindset</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Fairness tools</h3>
+            <p>Compare outcomes and error rates across groups.</p>
+          </article>
+          <article class="card">
+            <h3>Interpretability tools</h3>
+            <p>Investigate which features or patterns drive predictions.</p>
+          </article>
+          <article class="card">
+            <h3>Error analysis</h3>
+            <p>Find where the model fails, not just its average score.</p>
+          </article>
+          <article class="card">
+            <h3>Monitoring</h3>
+            <p>Track drift, performance, complaints, incidents, and escalations.</p>
+          </article>
+          <article class="card">
+            <h3>Governance</h3>
+            <p>Record owners, approvals, assumptions, and review dates.</p>
+          </article>
+          <article class="card">
+            <h3>Response</h3>
+            <p>Know how to pause, fix, notify, and learn from failures.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="exercise">
+        <h2>Quick Check</h2>
+        <form id="tools-quiz" class="quiz" onsubmit="event.preventDefault(); markQuiz('tools-quiz', { q1: 'Before', q2: 'After', q3: 'Owner' });">
+          <div class="question">
+            <h3>1. Testing group-level error rates belongs mainly when?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="Before" /> Before</label>
+              <label><input type="radio" name="q1" value="Never" /> Never</label>
+              <label><input type="radio" name="q1" value="Only" /> Only</label>
+              <label><input type="radio" name="q1" value="Later" /> Later</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>2. Tracking drift and incidents belongs mainly when?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="After" /> After</label>
+              <label><input type="radio" name="q2" value="Never" /> Never</label>
+              <label><input type="radio" name="q2" value="Design" /> Design</label>
+              <label><input type="radio" name="q2" value="Pitch" /> Pitch</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>3. A review calendar without a named person is missing what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="Owner" /> Owner</label>
+              <label><input type="radio" name="q3" value="Image" /> Image</label>
+              <label><input type="radio" name="q3" value="Title" /> Title</label>
+              <label><input type="radio" name="q3" value="Color" /> Color</label>
+            </div>
+          </div>
+          <button type="submit">Check</button>
+          <p class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Capstone Prompt</h2>
+        <p>
+          Choose one AI system and complete the <a href="../reference/audit-checklist.html">Responsible AI Audit Checklist</a>. The point is not to be perfect; the point is to make risks and responsibilities visible.
+        </p>
+      </section>
+
+      <section>
+        <h2>Primary Reading</h2>
+        <p>
+          Explore the <a href="https://github.com/microsoft/responsible-ai-toolbox">Microsoft Responsible AI Toolbox</a>. Focus on how tools can support, but not replace, human accountability.
+        </p>
+      </section>
+    </main>
+    <script src="../assets/rai-lesson.js"></script>
+  </body>
+</html>

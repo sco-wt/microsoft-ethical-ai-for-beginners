@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 0004 - Privacy, Security, and Data</title>
+    <link rel="stylesheet" href="../assets/course.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar">
+        <div>
+          <p class="kicker">Lesson 0004</p>
+          <h1>Privacy, Security, and Data</h1>
+        </div>
+        <a class="pill" href="../index.html">Course Home</a>
+      </nav>
+
+      <p class="lede">
+        Goal: trace where sensitive data enters, how it is transformed, and how it might leak, persist, or be misused.
+      </p>
+
+      <section class="callout">
+        <h3>The Core Idea</h3>
+        <p>
+          Privacy is not a checkbox at the end. In AI systems, data can appear in prompts, training sets, logs, embeddings, model outputs, analytics, and human review queues.
+        </p>
+      </section>
+
+      <section>
+        <h2>The Data Path</h2>
+        <div class="steps">
+          <div class="step">
+            <strong>Collect</strong>
+            What data is gathered, and is it necessary?
+          </div>
+          <div class="step">
+            <strong>Store</strong>
+            Where does data persist, and for how long?
+          </div>
+          <div class="step">
+            <strong>Use</strong>
+            Who or what can access it during inference or review?
+          </div>
+          <div class="step">
+            <strong>Expose</strong>
+            Could outputs reveal private facts or sensitive attributes?
+          </div>
+        </div>
+      </section>
+
+      <section class="exercise">
+        <h2>Quick Check</h2>
+        <form id="privacy-quiz" class="quiz" onsubmit="event.preventDefault(); markQuiz('privacy-quiz', { q1: 'Minimize', q2: 'Retention', q3: 'Exposure' });">
+          <div class="question">
+            <h3>1. "Do we need this field at all?" is mainly which privacy habit?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q1" value="Minimize" /> Minimize</label>
+              <label><input type="radio" name="q1" value="Decorate" /> Decorate</label>
+              <label><input type="radio" name="q1" value="Translate" /> Translate</label>
+              <label><input type="radio" name="q1" value="Enlarge" /> Enlarge</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>2. "How long do prompts stay in logs?" is mainly about what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q2" value="Branding" /> Branding</label>
+              <label><input type="radio" name="q2" value="Retention" /> Retention</label>
+              <label><input type="radio" name="q2" value="Typography" /> Typography</label>
+              <label><input type="radio" name="q2" value="Color" /> Color</label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>3. "Could the answer reveal private details?" checks what?</h3>
+            <div class="choices">
+              <label><input type="radio" name="q3" value="Exposure" /> Exposure</label>
+              <label><input type="radio" name="q3" value="Layout" /> Layout</label>
+              <label><input type="radio" name="q3" value="Pricing" /> Pricing</label>
+              <label><input type="radio" name="q3" value="Caching" /> Caching</label>
+            </div>
+          </div>
+          <button type="submit">Check</button>
+          <p class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Practice Prompt</h2>
+        <p>
+          Draw the data path for a chatbot: user input, model call, logs, analytics, human review, and output. Mark every place sensitive data could persist.
+        </p>
+      </section>
+
+      <section>
+        <h2>Primary Reading</h2>
+        <p>
+          Re-read the Microsoft lesson's privacy and security sections, then compare your checklist with the <a href="../reference/audit-checklist.html">Responsible AI Audit Checklist</a>.
+        </p>
+        <p>
+          Next: <a href="0005-transparency-accountability-and-human-oversight.html">Lesson 0005 - Transparency and Accountability</a>.
+        </p>
+      </section>
+    </main>
+    <script src="../assets/rai-lesson.js"></script>
+  </body>
+</html>
